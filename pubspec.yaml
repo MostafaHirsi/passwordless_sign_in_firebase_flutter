@@ -13,12 +13,12 @@ environment:
   sdk: ">=2.1.0 <3.0.0"
 
 dependencies:
-  shared_preferences: 0.5.0
+  shared_preferences: 0.4.0
   firebase_auth:
     git:
       url: https://github.com/bizz84/plugins
       ref: enable-passwordless-sign-in
-      path: packages/firebase_auth
+      path: packages/firebase_auth 
   flutter:
     sdk: flutter
 

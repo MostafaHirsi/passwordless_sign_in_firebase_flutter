@@ -46,8 +46,7 @@ class FirebaseEmailLinkHandler {
   }
 
   Future<void> sendLinkToEmail({String email, String url, String iOSBundleID, String androidPackageName}) async {
-    // TODO: Store email securely (e.g. keychain) rather than on shared preferences
-    sharedPreferences.setString(_userEmailAddressKey, email);
+    
 
     // Send link
     await FirebaseAuth.instance.sendLinkToEmail(
